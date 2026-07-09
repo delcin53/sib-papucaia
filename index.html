@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIB Papucaia - Vivendo o Amor e a Comunhão</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .bg-navy { background-color: #0B2545; }
+        .text-navy { color: #0B2545; }
+        .bg-gold { background-color: #EEB902; }
+        .text-gold { color: #EEB902; }
+        .bg-pastel { background-color: #F4F5F7; }
+        html { scroll-behavior: smooth; }
+    </style>
+</head>
+<body class="bg-pastel text-gray-800 font-sans relative">
+
+    <div id="toast" class="fixed bottom-5 right-5 bg-navy text-white px-5 py-3 rounded-xl shadow-2xl border border-gold transform translate-y-24 opacity-0 transition-all duration-300 z-50 flex items-center space-x-3">
+        <span id="toast-icon"></span>
+        <span id="toast-message" class="text-sm font-semibold"></span>
+    </div>
+
+    <nav class="bg-navy text-white sticky top-0 z-40 shadow-md">
+        <div class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <span class="text-xl font-bold tracking-wider text-gold">SIB PAPUCAIA</span>
+            </div>
+            <div class="hidden md:flex space-x-6 text-sm font-semibold">
+                <a href="#home" class="hover:text-gold transition">Início</a>
+                <a href="#sobre" class="hover:text-gold transition">Sobre Nós</a>
+                <a href="#cultos" class="hover:text-gold transition">Cultos & Ministérios</a>
+                <a href="#missoes" class="hover:text-gold transition">Missões</a>
+                <a href="#noticias" class="hover:text-gold transition">Avisos</a>
+                <a href="#app-secao" class="bg-gold text-navy px-3 py-1 rounded hover:bg-yellow-500 transition"><i class="fa-solid fa-mobile-screen-button"></i> App Membros</a>
+            </div>
+        </div>
+    </nav>
+
+    <header id="home" class="relative h-[85vh] flex items-center justify-center overflow-hidden bg-black text-white">
+        <video autoplay loop muted playsinline class="absolute z-0 w-auto min-w-full min-h-full max-w-none opacity-40 object-cover">
+            <source src="https://assets.mixkit.co/videos/preview/mixkit-people-rejoicing-in-a-church-40905-large.mp4" type="video/mp4">
+        </video>
+        
+        <div class="absolute right-6 top-6 z-20 w-24 h-24 md:w-36 md:h-36 opacity-85">
+            <img src="https://images.unsplash.com/photo-1544427920-c49ccfb85579?q=80&w=150&auto=format&fit=crop" alt="Logo SIB" class="w-full h-full object-contain rounded-full border-2 border-gold p-1 bg-navy/50">
+        </div>
+
+        <div class="relative z-10 text-center px-4 max-w-3xl">
+            <h1 class="text-4xl md:text-6xl font-extrabold mb-4 drop-shadow-md">SIB Papucaia</h1>
+            <p class="text-xl md:text-2xl font-light italic mb-8 text-gray-200">"Vivendo o Amor e a Comunhão"</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#cultos" class="bg-gold text-navy font-bold px-8 py-3 rounded-full shadow-lg hover:scale-105 transition text-center">Nossos Cultos</a>
+                <a href="#oracao" class="bg-transparent border-2 border-white font-bold px-8 py-3 rounded-full hover:bg-white hover:text-navy transition text-center">Pedido de Oração</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="sobre" class="py-16 max-w-7xl mx-auto px-4 grid md:grid-cols-2 gap-12 items-center">
+        <div>
+            <h2 class="text-3xl font-bold text-navy mb-4 border-b-2 border-gold pb-2">Bem-vindo à SIB Papucaia</h2>
+            <p class="text-gray-600 leading-relaxed mb-4">
+                Somos uma comunidade acolhedora no coração de Cachoeiras de Macacu. Sob a liderança do <strong>Pastor Delcin Nunes</strong>, nosso propósito é espalhar o amor de Cristo, acolhendo cada pessoa como parte da nossa família espiritual. Seja você um morador local ou visitante, há sempre um lugar para você aqui!
+            </p>
+            <div class="bg-white p-4 rounded-lg shadow-sm border-l-4 border-gold">
+                <p class="text-sm font-semibold text-navy"><i class="fa-solid fa-location-dot"></i> Endereço:</p>
+                <p class="text-sm text-gray-600">Av. Senador Doutel de Andrade (Em frente ao Mercado Vidal), Ribeira - Papucaia, Cachoeiras de Macacu - RJ.</p>
+            </div>
+        </div>
+
+        <div class="bg-navy text-white p-8 rounded-2xl shadow-xl">
+            <h3 class="text-2xl font-bold mb-6 text-gold text-center"><i class="fa-regular fa-calendar-days"></i> Programação Semanal</h3>
+            <div class="space-y-4">
+                <div class="flex justify-between border-b border-gray-700 pb-2">
+                    <span class="font-medium">Terça-feira (07:30h)</span>
+                    <span class="text-gold">Culto de Oração</span>
+                </div>
+                <div class="flex justify-between border-b border-gray-700 pb-2">
+                    <span class="font-medium">Quinta-feira (19:30h)</span>
+                    <span class="text-gold">Culto Word</span>
+                </div>
+                <div class="flex justify-between border-b border-gray-700 pb-2">
+                    <span class="font-medium">Domingo (09:00h)</span>
+                    <span class="text-gold">EBD (Escola Bíblica)</span>
+                </div>
+                <div class="flex justify-between pb-2">
+                    <span class="font-medium">Domingo (19:30h)</span>
+                    <span class="text-gold">Culto de Celebração</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="cultos" class="bg-white py-16">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-navy mb-12">Nossos Ministérios & Programas Sociais</h2>
+            
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="p-6 bg-pastel rounded-xl border border-gray-100">
+                    <div class="text-navy text-3xl mb-3"><i class="fa-solid fa-music"></i></div>
+                    <h3 class="text-xl font-bold text-navy mb-2">Comprometidos com o Reino</h3>
+                    <p class="text-sm text-gray-600">Nosso ministério de louvor e adoração que conduz a igreja à presença do Pai.</p>
+                </div>
+                <div class="p-6 bg-pastel rounded-xl border border-gray-100">
+                    <div class="text-navy text-3xl mb-3"><i class="fa-solid fa-child"></i></div>
+                    <h3 class="text-xl font-bold text-navy mb-2">Sib Kids</h3>
+                    <p class="text-sm text-gray-600">Instruindo nossas crianças no caminho em que devem andar com dinamismo e amor.</p>
+                </div>
+                <div class="p-6 bg-pastel rounded-xl border border-gray-100">
+                    <div class="text-navy text-3xl mb-3"><i class="fa-solid fa-gem"></i></div>
+                    <h3 class="text-xl font-bold text-navy mb-2">Ministério Pérolas</h3>
+                    <p class="text-sm text-gray-600">União e fortalecimento espiritual para as mulheres da nossa comunidade.</p>
+                </div>
+
+                <div class="p-6 bg-navy text-white rounded-xl shadow-md">
+                    <span class="bg-gold text-navy text-xs font-bold px-2 py-1 rounded uppercase">Social</span>
+                    <h3 class="text-xl font-bold text-gold mt-2 mb-2">Lutando por Vidas</h3>
+                    <p class="text-sm text-gray-300">Aulas comunitárias de Taekwondo integrando esporte, disciplina e valores cristãos.</p>
+                </div>
+                <div class="p-6 bg-navy text-white rounded-xl shadow-md">
+                    <span class="bg-gold text-navy text-xs font-bold px-2 py-1 rounded uppercase">Acolhimento</span>
+                    <h3 class="text-xl font-bold text-gold mt-2 mb-2">Projeto Hope</h3>
+                    <p class="text-sm text-gray-300">Apoio social e espiritual para famílias que buscam esperança e renovo.</p>
+                </div>
+                <div id="missoes" class="p-6 bg-navy text-white rounded-xl shadow-md">
+                    <span class="bg-gold text-navy text-xs font-bold px-2 py-1 rounded uppercase">Missões</span>
+                    <h3 class="text-xl font-bold text-gold mt-2 mb-2">Missões em Minas Gerais</h3>
+                    <p class="text-sm text-gray-300">Expansão do Evangelho através de projetos missionários ativos no estado de Minas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="noticias" class="py-16 max-w-7xl mx-auto px-4">
+        <h2 class="text-3xl font-bold text-navy text-center mb-8"><i class="fa-solid fa-bullhorn text-gold"></i> Anúncios do Mês</h2>
+        
+        <div class="bg-white p-6 rounded-2xl shadow-sm max-w-2xl mx-auto border-t-4 border-navy mb-12">
+            <ul class="space-y-4">
+                <li class="flex items-start space-x-3 border-b pb-3">
+                    <span class="text-gold mt-1"><i class="fa-solid fa-circle-check"></i></span>
+                    <div>
+                        <p class="font-semibold text-navy">Inscrições Abertas para os Pequenos Grupos</p>
+                        <p class="text-sm text-gray-500">Fortaleça sua comunhão em ambientes caseiros e acolhedores.</p>
+                    </div>
+                </li>
+                <li class="flex items-start space-x-3">
+                    <span class="text-gold mt-1"><i class="fa-solid fa-circle-check"></i></span>
+                    <div>
+                        <p class="font-semibold text-navy">Treinamento de Voluntários - Projeto Hope</p>
+                        <p class="text-sm text-gray-500">Próximo sábado às 15:00h no templo principal.</p>
+                    </div>
+                </li>
+            </ul>
+            <div class="mt-8 flex justify-center space-x-6 text-2xl">
+                <a href="#" class="text-blue-600 hover:scale-110 transition"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#" class="text-pink-600 hover:scale-110 transition"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" class="text-red-600 hover:scale-110 transition"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-gray-100 py-12 text-center">
+        <div class="max-w-md mx-auto px-4 bg-white p-6 rounded-xl shadow-md border border-gray-200">
+            <h3 class="text-xl font-bold text-navy mb-2"><i class="fa-solid fa-heart text-red-500"></i> Dízimos e Ofertas</h3>
+            <p class="text-sm text-gray-600 mb-4">Contribua com a obra do Senhor através da nossa chave PIX CNPJ.</p>
+            <div class="bg-pastel p-3 rounded font-mono text-navy font-bold text-md select-all cursor-pointer tracking-wider" onclick="copyPix()" title="Clique para copiar">
+                29215753000104
+            </div>
+            <p class="text-xs text-gray-400 mt-2">Clique no número acima para copiar o CNPJ.</p>
+        </div>
+    </section>
+
+    <section id="oracao" class="py-16 max-w-7xl mx-auto px-4 grid md:grid-cols-2 gap-12">
+        <div class="bg-white p-8 rounded-2xl shadow-sm">
+            <h3 class="text-2xl font-bold text-navy mb-4">Como podemos orar por você?</h3>
+            <form class="space-y-4" onsubmit="enviarOracao(event)">
+                <div>
+                    <label class="block text-xs font-bold uppercase text-gray-500 mb-1">Nome Completo</label>
+                    <input type="text" id="oracao-nome" required class="w-full p-3 bg-pastel rounded border focus:outline-none focus:border-navy" placeholder="Seu nome">
+                </div>
+                <div>
+                    <label class="block text-xs font-bold uppercase text-gray-500 mb-1">Motivo/Intenção de Oração</label>
+                    <textarea id="oracao-texto" rows="4" required class="w-full p-3 bg-pastel rounded border focus:outline-none focus:border-navy" placeholder="Escreva seu pedido..."></textarea>
+                </div>
+                <button type="submit" class="w-full bg-navy text-white font-bold p-3 rounded hover:bg-slate-800 transition">Enviar Pedido</button>
+            </form>
+        </div>
+
+        <div>
+            <h3 class="text-2xl font-bold text-navy mb-4">Venha nos Visitar</h3>
+            <div class="w-full h-72 rounded-2xl overflow-hidden shadow-inner bg-gray-300 relative">
+                <iframe class="absolute top-0 left-0 w-full h-full border-0" 
+                    src="https://maps.google.com/maps?q=Av.%20Senador%20Doutel%20de%20Andrade,%20Papucaia,%20Cachoeiras%20de%20Macacu&t=&z=15&ie=UTF8&iwloc=&output=embed" 
+                    allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <hr class="border-gray-300">
+    <section id="app-secao" class="py-16 bg-pastel">
+        <div class="max-w-4xl mx-auto px-4">
+            <div class="text-center mb-8">
+                <span class="bg-navy text-white text-xs font-bold px-3 py-1 rounded-full">Exclusivo Interno</span>
+                <h2 class="text-3xl font-bold text-navy mt-2">Aplicativo SIB Papucaia</h2>
+                <p class="text-sm text-gray-600">Cadastro de membros, cargos administrativos e alertas.</p>
+            </div>
+
+            <div id="login-admin-box" class="bg-white p-6 rounded-xl shadow-md max-w-sm mx-auto text-center">
+                <h3 class="font-bold text-navy mb-4"><i class="fa-solid fa-lock text-gold"></i> Modo Administrador</h3>
+                <input type="password" id="admin-password" class="w-full p-2 border rounded mb-3 text-center" placeholder="Digite a Senha de Edição">
+                <button onclick="verificarSenha()" class="bg-navy text-white px-6 py-2 rounded font-bold w-full hover:bg-slate-800 transition">Acessar Painel</button>
+                <p id="login-erro" class="text-red-500 text-xs mt-2 hidden">Senha incorreta!</p>
+            </div>
+
+            <div id="painel-app" class="hidden bg-white p-6 rounded-2xl shadow-lg border border-gray-200">
+                <div class="flex justify-between items-center border-b pb-4 mb-6">
+                    <h3 class="text-lg font-bold text-navy"><i class="fa-solid fa-users-gear text-gold"></i> Gestão de Membros (Banco Ativo)</h3>
+                    <button onclick="deslogar()" class="text-xs bg-red-100 text-red-600 px-2 py-1 rounded hover:bg-red-200">Sair do Painel</button>
+                </div>
+
+                <form id="form-membro" class="grid sm:grid-cols-3 gap-4 mb-8" onsubmit="adicionarMembro(event)">
+                    <div>
+                        <label class="text-xs font-bold text-gray-500 block mb-1">Nome do Membro</label>
+                        <input type="text" id="app-nome" required class="w-full p-2 border rounded bg-pastel">
+                    </div>
+                    <div>
+                        <label class="text-xs font-bold text-gray-500 block mb-1">Data de Aniversário</label>
+                        <input type="date" id="app-data" required class="w-full p-2 border rounded bg-pastel">
+                    </div>
+                    <div>
+                        <label class="text-xs font-bold text-gray-500 block mb-1">Classificação / Cargo</label>
+                        <select id="app-cargo" class="w-full p-2 border rounded bg-pastel">
+                            <option value="Membro">Membro</option>
+                            <option value="Diácono">Diácono</option>
+                            <option value="Ministério de Louvor">Ministério de Louvor</option>
+                            <option value="Ministério Infantil">Ministério Infantil</option>
+                            <option value="Professor da EBD">Professor da EBD</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="sm:col-span-3 bg-gold text-navy font-bold p-2 rounded hover:bg-yellow-500 transition">+ Cadastrar Integrante</button>
+                </form>
+
+                <h4 class="font-bold text-navy mb-2">Membros Ativos & Alertas:</h4>
+                <div class="overflow-x-auto">
+                    <table class="w-full text-left border-collapse">
+                        <thead>
+                            <tr class="bg-pastel text-xs font-bold uppercase text-gray-600">
+                                <th class="p-3">Nome</th>
+                                <th class="p-3">Cargo/Função</th>
+                                <th class="p-3">Aniversário</th>
+                                <th class="p-3">Status/Alerta</th>
+                                <th class="p-3 text-center">Ações</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tabela-membros">
+                            </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-navy text-gray-400 text-center py-8 text-sm">
+        <p>© 2026 SIB Papucaia. Todos os direitos reservados.</p>
+        <p class="text-xs mt-1 text-gray-500">Desenvolvido com carinho para a comunidade de Cachoeiras de Macacu.</p>
+    </footer>
+
+    <script>
+        // Função Global de Notificações Customizadas (Substitui Alertas Nativos)
+        function mostrarNotificacao(mensagem, erro = false) {
+            const toast = document.getElementById('toast');
+            const toastMsg = document.getElementById('toast-message');
+            const toastIcon = document.getElementById('toast-icon');
+            
+            toastMsg.innerText = mensaje || mensagem;
+            if (erro) {
+                toastIcon.innerHTML = '<i class="fa-solid fa-circle-exclamation text-red-500 text-xl"></i>';
+            } else {
+                toastIcon.innerHTML = '<i class="fa-solid fa-circle-check text-gold text-xl"></i>';
+            }
+            
+            // Ativa animação de subida
+            toast.classList.remove('translate-y-24', 'opacity-0');
+            toast.classList.add('translate-y-0', 'opacity-100');
+            
+            setTimeout(() => {
+                toast.classList.remove('translate-y-0', 'opacity-100');
+                toast.classList.add('translate-y-24', 'opacity-0');
+            }, 3500);
+        }
+
+        function copyPix() {
+            navigator.clipboard.writeText("29215753000104");
+            mostrarNotificacao("CNPJ/Pix copiado com sucesso para a área de transferência!");
+        }
+
+        function enviarOracao(e) {
+            e.preventDefault();
+            document.getElementById('oracao-nome').value = '';
+            document.getElementById('oracao-texto').value = '';
+            mostrarNotificacao("Pedido de oração recebido! Estaremos clamando por você.");
+        }
+
+        function verificarSenha() {
+            const senha = document.getElementById('admin-password').value;
+            if(senha === 'sib123') {
+                document.getElementById('login-admin-box').classList.add('hidden');
+                document.getElementById('painel-app').classList.remove('hidden');
+                carregarMembros();
+                mostrarNotificacao("Painel administrativo conectado!");
+            } else {
+                document.getElementById('login-erro').classList.remove('hidden');
+                mostrarNotificacao("Falha de autenticação: Senha Incorreta", true);
+            }
+        }
+
+        function deslogar() {
+            document.getElementById('login-admin-box').classList.remove('hidden');
+            document.getElementById('painel-app').classList.add('hidden');
+            document.getElementById('admin-password').value = '';
+            mostrarNotificacao("Sessão encerrada com segurança.");
+        }
+
+        // PONTO 1: Inicialização do Banco de Dados Local (LocalStorage)
+        let membros = JSON.parse(localStorage.getItem('sib_banco_membros'));
+
+        // Se o banco local estiver vazio, popula com a estrutura padrão inicial
+        if (!membros) {
+            membros = [
+                { nome: "Pr. Delcin Nunes", cargo: "Pastor Presidente", data: "1969-04-15" },
+                { nome: "Gabriel Santos", cargo: "Ministério de Louvor", data: "2002-07-10" }
+            ];
+            atualizarBancoLocal();
+        }
+
+        function atualizarBancoLocal() {
+            localStorage.setItem('sib_banco_membros', JSON.stringify(membros));
+        }
+
+        function carregarMembros() {
+            const tabela = document.getElementById('tabela-membros');
+            tabela.innerHTML = '';
+            const mesAtual = new Date().getMonth() + 1;
+
+            membros.forEach((m, index) => {
+                const dataMembro = new Date(m.data + 'T00:00:00');
+                const mesMembro = dataMembro.getMonth() + 1;
+                const diaMesFormatado = dataMembro.toLocaleDateString('pt-BR', {day: '2-digit', month: '2-digit'});
+
+                let alerta = '<span class="text-gray-400 text-xs">Sem alertas</span>';
+                if(mesMembro === mesAtual) {
+                    alerta = '<span class="bg-yellow-100 text-yellow-700 px-2 py-0.5 rounded-full text-xs font-bold animate-pulse"><i class="fa-solid fa-cake-candles"></i> Faz aniversário este mês!</span>';
+                }
+
+                tabela.innerHTML += `
+                    <tr class="border-b hover:bg-gray-50 text-sm">
+                        <td class="p-3 font-semibold text-gray-700">${m.nome}</td>
+                        <td class="p-3"><span class="bg-blue-50 text-blue-800 text-xs px-2 py-1 rounded">${m.cargo}</span></td>
+                        <td class="p-3 text-gray-600">${diaMesFormatado}</td>
+                        <td class="p-3">${alerta}</td>
+                        <td class="p-3 text-center">
+                            <button onclick="removerMembro(${index})" class="text-red-500 hover:text-red-700 p-1 transition" title="Excluir Integrante">
+                                <i class="fa-solid fa-trash-can"></i>
+                            </button>
+                        </td>
+                    </tr>
+                `;
+            });
+        }
+
+        function adicionarMembro(e) {
+            e.preventDefault();
+            const nome = document.getElementById('app-nome').value;
+            const data = document.getElementById('app-data').value;
+            const cargo = document.getElementById('app-cargo').value;
+
+            membros.push({ nome, cargo, data });
+            atualizarBancoLocal();
+            carregarMembros();
+
+            document.getElementById('form-membro').reset();
+            mostrarNotificacao("Novo integrante cadastrado com sucesso!");
+        }
+
+        function removerMembro(index) {
+            const nomeMembro = membros[index].nome;
+            if(confirm(`Deseja realmente remover ${nomeMembro} do banco de dados da igreja?`)) {
+                membros.splice(index, 1);
+                atualizarBancoLocal();
+                carregarMembros();
+                mostrarNotificacao(`${nomeMembro} removido com sucesso.`, true);
+            }
+        }
+    </script>
+</body>
+</html>
