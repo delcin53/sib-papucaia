@@ -162,8 +162,8 @@
 
     <section class="bg-gray-100 py-12 text-center">
         <div class="max-w-md mx-auto px-4 bg-white p-6 rounded-xl shadow-md border border-gray-200">
-            <h3 class="text-xl font-bold text-navy mb-2"><i class="fa-solid fa-heart text-red-500"></i> Dízimos e Ofertas</h3>
-            <p class="text-sm text-gray-600 mb-4">Contribua com a obra do Senhor através da nossa chave PIX CNPJ.</p>
+            <h3 class="text-xl font-bold text-navy mb-2"><i class="fa-solid fa-heart text-red-500"></i> Tesouraria</h3>
+            <p class="text-sm text-gray-600 mb-4">Gerencie as finanças da igreja.</p>
             <div class="bg-pastel p-3 rounded font-mono text-navy font-bold text-md select-all cursor-pointer tracking-wider" onclick="copyPix()" title="Clique para copiar">
                 29215753000104
             </div>
@@ -202,12 +202,12 @@
         <div class="max-w-4xl mx-auto px-4">
             <div class="text-center mb-8">
                 <span class="bg-navy text-white text-xs font-bold px-3 py-1 rounded-full">Exclusivo Interno</span>
-                <h2 class="text-3xl font-bold text-navy mt-2">Aplicativo SIB Papucaia</h2>
-                <p class="text-sm text-gray-600">Cadastro de membros, cargos administrativos e alertas.</p>
+                <h2 class="text-3xl font-bold text-navy mt-2">Aplicativo de Tesouraria SIB Papucaia</h2>
+                <p class="text-sm text-gray-600">Gerenciamento de finanças e relatórios.</p>
             </div>
 
             <div id="login-admin-box" class="bg-white p-6 rounded-xl shadow-md max-w-sm mx-auto text-center">
-                <h3 class="font-bold text-navy mb-4"><i class="fa-solid fa-lock text-gold"></i> Modo Administrador</h3>
+                <h3 class="font-bold text-navy mb-4"><i class="fa-solid fa-lock text-gold"></i> Modo Tesoureiro</h3>
                 <input type="password" id="admin-password" class="w-full p-2 border rounded mb-3 text-center" placeholder="Digite a Senha de Edição">
                 <button onclick="verificarSenha()" class="bg-navy text-white px-6 py-2 rounded font-bold w-full hover:bg-slate-800 transition">Acessar Painel</button>
                 <p id="login-erro" class="text-red-500 text-xs mt-2 hidden">Senha incorreta!</p>
@@ -215,7 +215,7 @@
 
             <div id="painel-app" class="hidden bg-white p-6 rounded-2xl shadow-lg border border-gray-200">
                 <div class="flex justify-between items-center border-b pb-4 mb-6">
-                    <h3 class="text-lg font-bold text-navy"><i class="fa-solid fa-users-gear text-gold"></i> Gestão de Membros (Banco Ativo)</h3>
+                    <h3 class="text-lg font-bold text-navy"><i class="fa-solid fa-users-gear text-gold"></i> Gestão de Finanças</h3>
                     <button onclick="deslogar()" class="text-xs bg-red-100 text-red-600 px-2 py-1 rounded hover:bg-red-200">Sair do Painel</button>
                 </div>
 
