@@ -163,11 +163,13 @@
     <section class="bg-gray-100 py-12 text-center">
         <div class="max-w-md mx-auto px-4 bg-white p-6 rounded-xl shadow-md border border-gray-200">
             <h3 class="text-xl font-bold text-navy mb-2"><i class="fa-solid fa-heart text-red-500"></i> Tesouraria</h3>
+            <p class="text-sm text-gray-600 mb-4">Gerencie as finanças da igreja, cadastre membros e controle aniversariantes.</p>
             <p class="text-sm text-gray-600 mb-4">Gerencie as finanças da igreja.</p>
             <div class="bg-pastel p-3 rounded font-mono text-navy font-bold text-md select-all cursor-pointer tracking-wider" onclick="copyPix()" title="Clique para copiar">
                 29215753000104
             </div>
             <p class="text-xs text-gray-400 mt-2">Clique no número acima para copiar o CNPJ.</p>
+            <p class="text-xs text-gray-400 mt-1">Endereço: Avenida Senador Doutel de Andrade</p>
         </div>
     </section>
 
@@ -208,6 +210,7 @@
 
             <div id="login-admin-box" class="bg-white p-6 rounded-xl shadow-md max-w-sm mx-auto text-center">
                 <h3 class="font-bold text-navy mb-4"><i class="fa-solid fa-lock text-gold"></i> Modo Tesoureiro</h3>
+                <p class="text-xs text-gray-500 mb-2">Acesso para Pastor, 1º Tesoureiro e Secretaria</p>
                 <input type="password" id="admin-password" class="w-full p-2 border rounded mb-3 text-center" placeholder="Digite a Senha de Edição">
                 <button onclick="verificarSenha()" class="bg-navy text-white px-6 py-2 rounded font-bold w-full hover:bg-slate-800 transition">Acessar Painel</button>
                 <p id="login-erro" class="text-red-500 text-xs mt-2 hidden">Senha incorreta!</p>
@@ -241,7 +244,7 @@
                     <button type="submit" class="sm:col-span-3 bg-gold text-navy font-bold p-2 rounded hover:bg-yellow-500 transition">+ Cadastrar Integrante</button>
                 </form>
 
-                <h4 class="font-bold text-navy mb-2">Membros Ativos & Alertas:</h4>
+                <h4 class="font-bold text-navy mb-2">Membros Ativos, Alertas e Aniversariantes:</h4>
                 <div class="overflow-x-auto">
                     <table class="w-full text-left border-collapse">
                         <thead>
