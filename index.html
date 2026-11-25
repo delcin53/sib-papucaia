@@ -92,6 +92,52 @@
         </div>
     </section>
 
+    <section id="missoes" class="bg-white py-16">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-navy mb-12">Nossas Missões</h2>
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="p-6 bg-pastel rounded-xl border border-gray-100">
+                    <div class="text-navy text-3xl mb-3"><i class="fa-solid fa-globe"></i></div>
+                    <h3 class="text-xl font-bold text-navy mb-2">Missão Internacional</h3>
+                    <p class="text-sm text-gray-600">Trabalhamos para levar a mensagem de Cristo a comunidades ao redor do mundo.</p>
+                </div>
+                <div class="p-6 bg-pastel rounded-xl border border-gray-100">
+                    <div class="text-navy text-3xl mb-3"><i class="fa-solid fa-heart"></i></div>
+                    <h3 class="text-xl font-bold text-navy mb-2">Missão Local</h3>
+                    <p class="text-sm text-gray-600">Apoiamos projetos locais que promovem o bem-estar e a educação.</p>
+                </div>
+                <div class="p-6 bg-pastel rounded-xl border border-gray-100">
+                    <div class="text-navy text-3xl mb-3"><i class="fa-solid fa-hands-helping"></i></div>
+                    <h3 class="text-xl font-bold text-navy mb-2">Missão de Acolhimento</h3>
+                    <p class="text-sm text-gray-600">Oferecemos apoio e acolhimento a famílias em situação de vulnerabilidade.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="noticias" class="bg-white py-16">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-navy mb-12">Avisos Importantes</h2>
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="p-6 bg-pastel rounded-xl border border-gray-100">
+                    <div class="text-navy text-3xl mb-3"><i class="fa-solid fa-bullhorn"></i></div>
+                    <h3 class="text-xl font-bold text-navy mb-2">Aviso 1</h3>
+                    <p class="text-sm text-gray-600">Informações sobre o próximo culto especial.</p>
+                </div>
+                <div class="p-6 bg-pastel rounded-xl border border-gray-100">
+                    <div class="text-navy text-3xl mb-3"><i class="fa-solid fa-bullhorn"></i></div>
+                    <h3 class="text-xl font-bold text-navy mb-2">Aviso 2</h3>
+                    <p class="text-sm text-gray-600">Atualizações sobre os ministérios.</p>
+                </div>
+                <div class="p-6 bg-pastel rounded-xl border border-gray-100">
+                    <div class="text-navy text-3xl mb-3"><i class="fa-solid fa-bullhorn"></i></div>
+                    <h3 class="text-xl font-bold text-navy mb-2">Aviso 3</h3>
+                    <p class="text-sm text-gray-600">Informações sobre eventos especiais.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section id="cultos" class="bg-white py-16">
         <div class="max-w-7xl mx-auto px-4">
             <h2 class="text-3xl font-bold text-center text-navy mb-12">Nossos Ministérios & Programas Sociais</h2>
