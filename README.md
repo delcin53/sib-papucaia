@@ -34,6 +34,7 @@
                 <a href="#missoes" class="hover:text-gold transition">Missões</a>
                 <a href="#noticias" class="hover:text-gold transition">Avisos</a>
                 <a href="#app-secao" class="bg-gold text-navy px-3 py-1 rounded hover:bg-yellow-500 transition"><i class="fa-solid fa-mobile-screen-button"></i> App Membros</a>
+                <a href="#lancamentos" class="bg-gold text-navy px-3 py-1 rounded hover:bg-yellow-500 transition"><i class="fa-solid fa-cash-register"></i> Lançamentos</a>
             </div>
         </div>
     </nav>
