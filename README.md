@@ -211,6 +211,7 @@
         <div class="max-w-md mx-auto px-4 bg-white p-6 rounded-xl shadow-md border border-gray-200">
             <h3 class="text-xl font-bold text-navy mb-2"><i class="fa-solid fa-heart text-red-500"></i> Tesouraria</h3>
             <p class="text-sm text-gray-600 mb-4">Gerencie as finanças da igreja, cadastre membros e controle aniversariantes.</p>
+            <p class="text-sm text-gray-600 mb-4">Gerencie as finanças da igreja, cadastre membros e controle aniversariantes.</p>
             <p class="text-sm text-gray-600 mb-4">Gerencie as finanças da igreja.</p>
             <div class="bg-pastel p-3 rounded font-mono text-navy font-bold text-md select-all cursor-pointer tracking-wider" onclick="copyPix()" title="Clique para copiar">
                 29215753000104
@@ -223,6 +224,7 @@
     <section id="oracao" class="py-16 max-w-7xl mx-auto px-4 grid md:grid-cols-2 gap-12">
         <div class="bg-white p-8 rounded-2xl shadow-sm">
             <h3 class="text-2xl font-bold text-navy mb-4">Como podemos orar por você?</h3>
+            <p class="text-sm text-gray-600 mb-4">Envie seus pedidos de oração e mantenha-se conectado.</p>
             <form class="space-y-4" onsubmit="enviarOracao(event)">
                 <div>
                     <label class="block text-xs font-bold uppercase text-gray-500 mb-1">Nome Completo</label>
@@ -253,10 +255,12 @@
                 <span class="bg-navy text-white text-xs font-bold px-3 py-1 rounded-full">Exclusivo Interno</span>
                 <h2 class="text-3xl font-bold text-navy mt-2">Aplicativo de Tesouraria SIB Papucaia</h2>
                 <p class="text-sm text-gray-600">Gerenciamento de finanças e relatórios.</p>
+                <p class="text-sm text-gray-600">Gerenciamento de finanças e relatórios.</p>
             </div>
 
             <div id="login-admin-box" class="bg-white p-6 rounded-xl shadow-md max-w-sm mx-auto text-center">
                 <h3 class="font-bold text-navy mb-4"><i class="fa-solid fa-lock text-gold"></i> Modo Tesoureiro</h3>
+                <p class="text-xs text-gray-500 mb-2">Acesso para Pastor, 1º Tesoureiro e Secretaria</p>
                 <p class="text-xs text-gray-500 mb-2">Acesso para Pastor, 1º Tesoureiro e Secretaria</p>
                 <input type="password" id="admin-password" class="w-full p-2 border rounded mb-3 text-center" placeholder="Digite a Senha de Edição">
                 <button onclick="verificarSenha()" class="bg-navy text-white px-6 py-2 rounded font-bold w-full hover:bg-slate-800 transition">Acessar Painel</button>
